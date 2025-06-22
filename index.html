@@ -44,6 +44,7 @@
       color: #800080;
       transition: transform 2s ease-in-out;
       cursor: pointer;
+      display: inline-block;
     }
     .together-forever {
       opacity: 0;
@@ -138,7 +139,7 @@
       const eight = document.getElementById("eight");
       const message = document.getElementById("message");
       eight.style.transform = "rotate(90deg)";
-      eight.textContent = "∞";
+      eight.style.pointerEvents = "none"; // disable further clicks
       message.style.opacity = 1;
     }
 
