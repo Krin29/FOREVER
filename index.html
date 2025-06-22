@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 8 Months Choopy!</title>
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffc0cb, #ffe6e6);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      overflow-x: hidden;
+      animation: floatText 20s infinite linear;
+    }
+    h1 {
+      margin-top: 50px;
+      color: #d6336c;
+      font-size: 3em;
+      animation: fadeIn 2s ease-in;
+    }
+    .heart {
+      font-size: 100px;
+      color: red;
+      animation: pulse 1.2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes floatText {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 0; }
+    }
+    .infinity-container {
+      margin-top: 40px;
+      font-size: 80px;
+      color: #800080;
+      transition: transform 2s ease-in-out;
+      cursor: pointer;
+    }
+    .together-forever {
+      opacity: 0;
+      font-size: 2em;
+      color: #ff1493;
+      transition: opacity 1.5s;
+      margin-top: 20px;
+    }
+    .gallery {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .gallery img {
+      max-width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+    iframe {
+      margin-top: 40px;
+      border: none;
+      border-radius: 12px;
+    }
+    .surprise-button {
+      margin-top: 50px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .surprise-button:hover {
+      background-color: #ff1493;
+    }
+    .surprise-message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #6a0dad;
+      padding: 0 20px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <h1>Happy 8 months choopy!! I love you</h1>
+
+  <div class="infinity-container" onclick="rotateEight()" id="eight">8</div>
+  <div class="together-forever" id="message">Together Forever ♾️</div>
+
+  <iframe width="300" height="170" src="https://www.youtube.com/embed/dElRVQFqj-k?autoplay=1&loop=1&playlist=dElRVQFqj-k" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <button class="surprise-button" onclick="showMessage()">Click me for a surprise 💌</button>
+  <div class="surprise-message" id="surprise">
+    Hi baby,
+
+    I hope you like this new website I made. I tried to make it even better than the last one! I just wanted to say how much I love and appreciate you, my love. I truly wish we could be together for our day, but this will have to do for now. I can't wait to see you and finally be with you again.
+
+    Thank you so much for letting me call you my girlfriend for a whole 8 months and for putting up with me. Every moment we share together is so important and feels absolutely incredible. I want to have you for the rest of my life. I aspire to one day call you my wife and build a family and future together.
+
+    Even though it’s been 8 months, I still can't get you out of my mind. You keep me in a constant honeymoon phase — butterflies and all. You're my everything, the most important person to me. Thank you for all your support and everything you do.
+
+    I love you so so so so so so much — your smile, your eyes, your laugh, your hair, your scent, your everything just has me in awe. I could never get over it, and honestly...
+
+    "I think I want to marry you."
+
+    — For the love of my life.
+  </div>
+
+  <div class="gallery">
+    <img src="IMG_3855.HEIC" alt="Us 1">
+    <img src="IMG_4090.HEIC" alt="Us 2">
+    <img src="IMG_3759.HEIC" alt="Us 3">
+    <img src="IMG_3124.HEIC" alt="Us 4">
+    <img src="IMG_3047.HEIC" alt="Us 5">
+  </div>
+
+  <script>
+    function rotateEight() {
+      const eight = document.getElementById("eight");
+      const message = document.getElementById("message");
+      eight.style.transform = "rotate(90deg)";
+      eight.textContent = "∞"; // infinity symbol
+      message.style.opacity = 1;
+    }
+
+    function showMessage() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+</body>
+</html>
